@@ -1,0 +1,442 @@
+/* OpenBioForge Website Dynamic Style Index
+
+1. Website Default Styling
+2. Navigation
+3. Primary and Secondary Colors
+4. Banner
+5. Typography
+6. Buttons
+7. Footer
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 1. Website Default Styling */
+/*------------------------------------------------------------------------------------------*/
+
+
+body {
+    background:#000;
+}
+
+
+/* Default Link Color */
+
+a, .la-ball-triangle-path {
+    color:#87fa23;
+}
+
+a:hover, #header.nav-solid nav a:hover {
+    color:#87fa23;
+}
+
+/* Default Icon Color */
+
+.icon i {
+    color:#87fa23;
+}
+
+/* Border Color */
+
+#banner .section-heading:before, .testimonial.classic footer:before {
+    background: #b6443f;
+    text-shadow: 0 0 10px #87fa23, 0 0 20px #87fa23;
+}
+
+.pricing-block-content:hover {
+    border-color:#87fa23;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 2. Navigation */
+/*------------------------------------------------------------------------------------------*/
+
+
+/* Transparent Navigation Color on a Banner */
+
+#header nav a, #header i {
+    color:#fff;
+}
+
+
+/* Navigation Colors when the Navigation is sticky and solid */ 
+
+#header.nav-solid, #header.nav-solid a, #header.nav-solid i {
+    color:#ccc;
+}
+
+/* Mobile Navigation Colors */
+
+#nav-mobile ul li a {
+    color:#ccc;
+}
+
+#nav-mobile ul li a:hover {
+    color:#87fa23;
+}
+
+
+/* Navigation Active State */
+
+#header.nav-solid .active {
+    color: #87fa23;
+    border-color: #87fa23;
+}
+
+/* Mobile Navigation Active State */
+#nav-mobile .active {
+    color: #87fa23 !important;
+}
+
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 3. Primary and Secondary Colors */
+/*------------------------------------------------------------------------------------------*/
+
+
+/* Primary Background and Text Colors */
+
+.primary-color, .featured .pricing {
+    background-color:#87fa23;
+}
+
+.primary-color, .primary-color .section-title, .primary-color .section-subtitle, .featured .pricing, .featured .pricing p {
+    color:#000;    
+}
+
+.section-heading h2:after {
+    background:#b6443f;
+    content:"";
+    display:block;
+    width:30px;
+    height:5px;
+    margin-top:30px;
+}
+
+.text-center .section-heading h2:after {
+    margin:30px auto 25px auto;
+}
+
+/* Primary Icon Colors */
+
+.primary-color .icon i, .primary-color i {
+    color:#000;
+}
+
+
+/* Secondary Background and Text Colors */
+
+.secondary-color {
+    background-color:#0a0a0a;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 4. Banner */
+/*------------------------------------------------------------------------------------------*/
+
+
+/* Banner Background and Text Colors */
+
+#banner {
+    position: relative;
+    overflow: hidden;
+    --parallax-offset: 0px;
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--parallax-offset));
+    width: 100%;
+    max-width: 1245px;
+    height: 100%;
+    background: url("../images/banner-images/banner-image-1.jpg") no-repeat center top;
+    background-size: cover;
+    z-index: -1;
+    will-change: transform;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 5. Typography */
+/*------------------------------------------------------------------------------------------*/
+
+
+body {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:15px;
+    font-weight:normal;
+    color:#eee;
+}
+
+/* Logo, if you are using Fonts as Logo and not image
+
+#logo h1 {
+    font-family:;
+    font-size:; 
+    font-weight:;
+    color:;
+}
+
+#logo h2 {
+    font-family:;
+    font-size:; 
+    font-weight:;
+    color:;
+}
+
+*/
+
+
+/* Banner Typography */
+
+#banner h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:50px;
+    line-height:60px;
+    font-weight:800;
+    color:#87fa23;
+    text-shadow: 0 0 10px #000, 0 0 20px #000;
+}
+
+#banner h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:28px;
+    font-weight:800;
+    color:#87fa23;
+    text-shadow: 0 0 10px #000, 0 0 20px #000;
+}
+
+
+/* Section Title and Subtitle */
+
+.section-title {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight:700;
+    color:#eee;
+}
+
+.section-subtitle {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px;
+    font-weight:300;
+    color:#9c9c9c;
+}
+
+/* Testimonial */
+
+.testimonial q {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 17px; 
+    font-weight:300;
+}
+
+.testimonial.classic q, .testimonial.classic footer {
+    color:#eee;
+}
+
+
+/* Standard Headings h1-h6 */
+
+h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 40px; 
+    font-weight:300;
+    color:#eee;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight:300;
+    color:#eee;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 30px; 
+    font-weight:700;
+    color:#eee;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 18px; 
+    font-weight:400;
+    color:#eee;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px; 
+    font-weight:400;
+    color:#eee;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 14px; 
+    font-weight:400;
+    color:#eee;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 6. Buttons */
+/*------------------------------------------------------------------------------------------*/
+
+/* ----------Default Buttons---------- */
+
+
+/* Button Text */
+
+.button, input[type="submit"]  {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:14px;
+    font-weight:bold;
+    color:#fff;
+}
+
+
+/* Button Color */
+
+.button, input[type="submit"] {
+    border-color:#fff;
+}
+
+
+/* Button Hover Color */
+
+.button:hover,  input[type="submit"]:hover {
+    border-color:#87fa23;
+    color:#87fa23;
+}
+
+
+/* ----------Banner Buttons---------- */
+
+
+/* Button Text */
+
+#banner .button {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:16px;
+    color:#fff;
+}
+
+
+/* Button Color */
+
+#banner .button {
+    border-color:#fff;
+}
+
+
+/* Button Hover Color */
+
+#banner .button:hover {
+    color:#87fa23;
+    border-color:#87fa23;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 7. Footer */
+/*------------------------------------------------------------------------------------------*/
+
+#landing-footer, #landing-footer p, #landing-footer a {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:12px;
+    font-weight:normal;
+    color:#999;
+}
+
+/* Footer Icon Color */
+
+#landing-footer i {
+    color:#999;
+}
+
+/* Highlight Text Color */
+
+.highlight-text {
+    color: #b6443f;
+}
+
+/* Legal Disclaimer Link Styling */
+.legal-disclaimer-link a {
+    color: #fff !important;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.legal-disclaimer-link a:hover {
+    color: #fff !important;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Coming Soon Notice Styling */
+.coming-soon-notice {
+    background: rgba(135, 250, 35, 0.1);
+    border: 1px solid rgba(135, 250, 35, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.coming-soon-notice h4 {
+    color: #87fa23;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Legal Section Styling */
+.legal-content {
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.legal-content p {
+    margin-bottom: 20px;
+}
+
+.legal-content strong {
+    color: #fff;
+}
+
+.legal-content a {
+    color: #87fa23;
+    text-decoration: none;
+}
+
+.legal-content a:hover {
+    text-decoration: underline;
+}
+
+/* Skip Link for Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 8px;
+    background: #87fa23;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    z-index: 100;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 8px;
+}
