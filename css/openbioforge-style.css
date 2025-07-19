@@ -637,6 +637,7 @@ a img:hover {
     margin-top: 0;
 }
 
+/* Fix float clearing for icon blocks in 2x2 grid */
 .col-2-3 .icon-block:nth-child(3) {
     clear: left;
 }
@@ -675,7 +676,7 @@ a img:hover {
     padding: 55px 0 0 0;
 }
 
-/* Quote Section */
+/* Testimonials/Quote Section */
 .testimonial {
     padding: 15px;
 }
@@ -867,8 +868,8 @@ blockquote {
     height: 22px;
     width: 22px;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 26px;
+    right: 28px;
     cursor: pointer;
 }
 
@@ -985,8 +986,8 @@ blockquote {
     .featherlight .featherlight-close-icon {
         position: absolute;
         z-index: 9999;
-        top: 25px;
-        right: 25px;
+        top: 16px;
+        right: 16px;
         line-height: 44px;
         width: 44px;
         height: 44px;
@@ -1001,8 +1002,6 @@ blockquote {
         -moz-transition: all 0.3s ease-out;
         -o-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
-        background: rgba(0, 0, 0, 0.3);
-        border-radius: 50%;
     }
 
     .featherlight .featherlight-close-icon:hover {
@@ -1102,23 +1101,6 @@ blockquote {
         max-height: 98%;
         padding: 10px 10px 0;
         border-bottom: 10px solid transparent;
-    }
-
-    .featherlight .featherlight-close-icon {
-        top: 10px;
-        right: 10px;
-        width: 48px;
-        height: 48px;
-        line-height: 48px;
-        font-size: 20px;
-        background: rgba(0, 0, 0, 0.6);
-        opacity: 0.8;
-        z-index: 10000;
-    }
-
-    .featherlight .featherlight-close-icon:hover {
-        opacity: 1;
-        background: rgba(0, 0, 0, 0.8);
     }
 
     /* Adjust navigation arrows to avoid overlapping with close button */
@@ -1424,22 +1406,11 @@ blockquote {
     }
 
     .featherlight .featherlight-close-icon {
-        top: 5px;
-        right: 5px;
+        top: 12px;
+        right: 10px;
         width: 50px;
         height: 50px;
         line-height: 50px;
-        font-size: 18px;
-        background: rgba(0, 0, 0, 0.7);
-        opacity: 0.9;
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        z-index: 10001;
-    }
-
-    .featherlight .featherlight-close-icon:hover {
-        opacity: 1;
-        background: rgba(0, 0, 0, 0.9);
-        border-color: rgba(255, 255, 255, 0.5);
     }
 
     /* Adjust navigation arrows to avoid close button area */
@@ -1456,6 +1427,11 @@ blockquote {
     .featherlight-previous {
         left: 5px !important;
         right: 85% !important;
+    }
+
+    #slvj-close-icon:before {
+        top: 26px;
+        right: 24px;
     }
 
     #header .row {
