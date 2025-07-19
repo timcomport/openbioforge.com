@@ -637,7 +637,6 @@ a img:hover {
     margin-top: 0;
 }
 
-/* Fix float clearing for icon blocks in 2x2 grid */
 .col-2-3 .icon-block:nth-child(3) {
     clear: left;
 }
@@ -676,7 +675,7 @@ a img:hover {
     padding: 55px 0 0 0;
 }
 
-/* Testimonials/Quote Section */
+/* Quote Section */
 .testimonial {
     padding: 15px;
 }
@@ -941,7 +940,6 @@ blockquote {
     display: inline-block;
 }
 
-/* Featherlight Gallery Lightbox */
 @media all {
     .featherlight {
         display: none;
@@ -989,8 +987,9 @@ blockquote {
         z-index: 9999;
         top: 25px;
         right: 25px;
-        line-height: 25px;
-        width: 25px;
+        line-height: 44px;
+        width: 44px;
+        height: 44px;
         cursor: pointer;
         text-align: center;
         color: #fff;
@@ -1002,6 +1001,8 @@ blockquote {
         -moz-transition: all 0.3s ease-out;
         -o-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
     }
 
     .featherlight .featherlight-close-icon:hover {
@@ -1022,7 +1023,6 @@ blockquote {
         border: none;
     }
 
-    /* Gallery Navigation Arrows */
     .featherlight-next,
     .featherlight-previous {
         font-family: "FontAwesome";
@@ -1104,9 +1104,27 @@ blockquote {
         border-bottom: 10px solid transparent;
     }
 
+    .featherlight .featherlight-close-icon {
+        top: 10px;
+        right: 10px;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0.8;
+        z-index: 10000;
+    }
+
+    .featherlight .featherlight-close-icon:hover {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Adjust navigation arrows to avoid overlapping with close button */
     .featherlight-next,
     .featherlight-previous {
-        top: 10px;
+        top: 70px; /* Start below close button area */
         right: 10px;
         left: 85%;
     }
@@ -1148,7 +1166,6 @@ blockquote {
     display: inline-block;
 }
 
-/* Scroll Up Button */
 #scrollUp {
     bottom: 15px;
     right: 30px;
@@ -1406,6 +1423,41 @@ blockquote {
         padding: 5px !important;
     }
 
+    .featherlight .featherlight-close-icon {
+        top: 5px;
+        right: 5px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0.9;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        z-index: 10001;
+    }
+
+    .featherlight .featherlight-close-icon:hover {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.9);
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Adjust navigation arrows to avoid close button area */
+    .featherlight-next,
+    .featherlight-previous {
+        top: 65px !important; /* Start below close button area */
+    }
+
+    .featherlight-next {
+        right: 5px !important;
+        left: 85% !important;
+    }
+
+    .featherlight-previous {
+        left: 5px !important;
+        right: 85% !important;
+    }
+
     #header .row {
         padding: 0 15px !important;
     }
@@ -1439,7 +1491,6 @@ blockquote {
         padding-bottom: 25px;
     }
 
-    /* Video Lightbox Responsive */
     .slvj-lightbox iframe, .slvj-lightbox object, .slvj-lightbox embed {
         height: 270px !important;
     }
@@ -1531,7 +1582,6 @@ blockquote {
         padding-right: 20px;
     }
 
-    /* Video Lightbox Responsive */
     .slvj-lightbox iframe, .slvj-lightbox object, .slvj-lightbox embed {
         height: 370px !important;
     }
@@ -1587,7 +1637,6 @@ blockquote {
         padding-right: 20px;
     }
 
-    /* Video Lightbox Responsive */
     .slvj-lightbox iframe, .slvj-lightbox object, .slvj-lightbox embed {
         height: 432px !important;
     }
