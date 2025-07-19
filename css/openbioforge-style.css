@@ -721,12 +721,14 @@ blockquote {
 
 /* Gallery Section */
 #gallery img {
-    max-height: 300px;
     border: 2px solid #87fa23;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 #gallery [class*='col-'] {
-    padding: 0;
+    padding: 10px;
 }
 
 #gallery a {
@@ -1398,6 +1400,10 @@ blockquote {
     .col-1, .col-2, .col-3, .col-4, .col-2-3, .col-3-4, .col-61, .col-38 {
         padding-right: 0;
         padding-left: 0;
+    }
+
+    #gallery [class*='col-'] {
+        padding: 5px !important;
     }
 
     #header .row {
